@@ -1,0 +1,59 @@
+/* Siga as orientações no arquivo README para concluir o exercício */
+
+/*@media faz uma verificação de dispositivo, neste caso o tamanho da tela*/
+@media (max-width: 480px) {
+    .container {
+        background-color: #add8e6;
+
+    }
+}
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: green;
+    color: rgb(253, 248, 248);
+    font-size: 30px;
+}
+
+.cabecalho {
+    background-color: rgb(121, 205, 121);
+    text-align: center;
+}
+
+.conteudo{ 
+    background-color:  rgb(121, 205, 121);
+    color: rgb(245, 239, 239);
+    font-size: 15px;
+}
+
+/*1- para que eu consiga criar uma regra somente para os filhos, 
+eu devo utilizar o operador ">", ex:(.conteudo > p), caso eu queira adicionar uma
+regra para uma classe em geral, basta eu dar um espaço, ex:(.conteudo p)*/
+
+/*2-    criei um outro bloco somente para ajeitar o tamanho dos outros <P>s*/
+.conteudo p {
+    font-size: 20px;
+}
+/*1-*/
+.conteudo > p{
+    color: #e4005a;
+    font-size: 26px;
+}
+
+/*"nth-child(n)" = procura por qualquer filho;
+"nth-of-type" = procura especificamente o que eu trouxer, poderia usar h1, h2, p, div*/
+.conteudo p:nth-of-type(3){
+    color: purple;
+    text-decoration: underline; /*text-decoration é onde eu faço a estilização do texto*/
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
